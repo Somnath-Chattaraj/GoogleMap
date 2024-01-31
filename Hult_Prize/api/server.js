@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // MongoDB connection
-mongoose.connect('mongodb://127.0.0.1:27017/mernmap');
+mongoose.connect(process.env.MONGOOSE_URL);
 
 app.use(express.json());
 // const mongoose = require('mongoose');
